@@ -23,20 +23,72 @@ const catalogue = [
 ];
 
 function countBooks() {
-  // Your code here
+  return catalogue.length;
 }
+
 
 function checkBook(book) {
-  // Your code here
+  //  while (catalogue[index]=== book){console.log(true); catalogue++;}} 
+  return (catalogue.includes(book))
+
+  // Actual answer
+  for (let i = 0; i < catalogue.length; i++) {
+    let bookToCheck = catalogue[i];
+    console.log(bookToCheck);
+
+    if (bookToCheck === book) {
+      return true;
+    }
+  }
+  return false;
 }
 
+// Or 
+// (    function checkBook(book) {
+
+//   let matches = catalogue.filter(function(item) {
+//     return book === item;
+//   });
+//   return matches.length >= 1;
+// }            )
+
+
+// My failing attempt
 function countBooksByFirstLetter(letter) {
-  // Your code here
-}
+  
+  let selectedBooks = [];
+  for (i = 0; i < catalogue.length; i++) {
+    let firstLetter = catalogue[i][0];
+    if (firstLetter === letter) {
+      selectedBooks.push(catalogue[i])
+    }};
+    return selectedBooks.length
+  };
+
 
 function countBooksByKeyword(keyword) {
-  // Your code here
-}
+ 
+  let keywordedBooks = [];
+  for (i = 0; i < catalogue.length; i++) {
+    if (catalogue.search(keyword)) {
+      keywordedBooks.push(true)
+    }};
+
+    return keywordedBooks.length
+
+
+  };
+
+
+
+//   for (i=0; i < catalogue.length; i++)
+//   // if catalogue index include keyword, add to a new array and print the length of the array
+
+//  var keywordedBook = catalogue.filter (blah => catalogue[i,i] === keyword)
+// return keywordedBook }
+// // The above returns an empty array. The filter is not working.   
+
+
 
 function getBooksByAuthor(author) {
   // Your code here
