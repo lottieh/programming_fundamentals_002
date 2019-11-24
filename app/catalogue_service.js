@@ -99,3 +99,31 @@ module.exports = {
   countBooksByKeyword,
   getBooksByAuthor
 };
+
+
+/* # Written questions
+
+1. In what data type have we chosen to represent a book?
+    The books are all strings.
+
+2. Is this the best data type, do you think? Could we have chosen a more appropriate data type? Why?
+    These may have been better represented as objects as they have properties associated with them. 
+
+3. Take a read of the Jest Documentation about [Matchers](https://jestjs.io/docs/en/using-matchers) such as `toBe` and `toEqual`. What other matchers might come in useful? Check the tests you have written and make a list of alternative matchers which you might have been able to use.
+
+4. What data types are considered "complex" data types?
+    Complex data types are Objects
+
+5. What data types are considered "primitive" data types?
+    Primitive data types are 
+    Boolean
+    Null
+    Undefined
+    Number
+    String
+    Symbol
+
+6. In JavaScript it is possible to use `==` ("double equals") or `===` ("triple equals") to compare two values. What is the difference and why do we prefer triple equals?
+    == will compare two variable regardless of their data type. Whereas for === the data types must be consistent. 
+
+*/
