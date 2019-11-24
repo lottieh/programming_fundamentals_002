@@ -24,7 +24,7 @@ const catalogue = [
 
 function countBooks() {
   return catalogue.length;
-}
+};
 
 
 function checkBook(book) {
@@ -41,7 +41,7 @@ function checkBook(book) {
     }
   }
   return false;
-}
+};
 
 // Or 
 // (    function checkBook(book) {
@@ -53,41 +53,31 @@ function checkBook(book) {
 // }            )
 
 
-// My failing attempt
+
 function countBooksByFirstLetter(letter) {
-  
+
   let selectedBooks = [];
   for (i = 0; i < catalogue.length; i++) {
     let firstLetter = catalogue[i][0];
     if (firstLetter === letter) {
       selectedBooks.push(catalogue[i])
-    }};
-    return selectedBooks.length
+    }
   };
+  return selectedBooks.length
+};
 
 
 function countBooksByKeyword(keyword) {
- 
+  
   let keywordedBooks = [];
-  for (i = 0; i < catalogue.length; i++) {
-    if (catalogue.search(keyword)) {
-      keywordedBooks.push(true)
-    }};
-
-    return keywordedBooks.length
-
-
+  for (i = 0; i< catalogue.length; i++) {
+    if (catalogue[i].includes(keyword)) {
+      keywordedBooks.push(catalogue[i] )
+    }
   };
 
-
-
-//   for (i=0; i < catalogue.length; i++)
-//   // if catalogue index include keyword, add to a new array and print the length of the array
-
-//  var keywordedBook = catalogue.filter (blah => catalogue[i,i] === keyword)
-// return keywordedBook }
-// // The above returns an empty array. The filter is not working.   
-
+  return keywordedBooks.length
+};
 
 
 function getBooksByAuthor(author) {
