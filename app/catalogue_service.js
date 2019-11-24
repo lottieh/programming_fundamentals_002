@@ -81,8 +81,16 @@ function countBooksByKeyword(keyword) {
 
 
 function getBooksByAuthor(author) {
-  // Your code here
-}
+  let booksByAuthor = [];
+  for (i = 0; i< catalogue.length; i++) {
+    if (catalogue[i].includes(author)) {
+      booksByAuthor.push(catalogue[i] )
+    }
+  };
+
+  return booksByAuthor
+};
+
 
 module.exports = {
   countBooks,

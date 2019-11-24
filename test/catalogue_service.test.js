@@ -55,7 +55,16 @@ describe('catalogueService', () => {
         "Bring Up The Bodies by Hilary Mantel",
         "A Place of Greater Safety by Hilary Mantel",
         "Giving Up the Ghost by Hilary Mantel",
-        "The Assassination of Margaret Thatcher by Hilary Mantel",]);
+        "The Assassination of Margaret Thatcher by Hilary Mantel"]);
+      
+        expect (catalogueService.getBooksByAuthor('Benjamin Mayne')).toEqual([]); 
+      
+      expect(catalogueService.getBooksByAuthor('Char')).toEqual([
+        "The Yellow Wallpaper by Charlotte Perkins Gilman",
+        "A Tale of Two Cities by Charles Dickens",
+        "Oliver Twist by Charles Dickens",
+        "Great Expectations by Charles Dickens",
+        "The Origin of Species by Charles Darwin"])
     });
   });
 });
