@@ -110,7 +110,10 @@ module.exports = {
     These may have been better represented as objects as they have properties associated with them. 
 
 3. Take a read of the Jest Documentation about [Matchers](https://jestjs.io/docs/en/using-matchers) such as `toBe` and `toEqual`. What other matchers might come in useful? Check the tests you have written and make a list of alternative matchers which you might have been able to use.
-
+  .toContain for arrays
+  .toBeTruthy 
+  .toBeUndefined
+  
 4. What data types are considered "complex" data types?
     Complex data types are Objects
 
@@ -124,6 +127,6 @@ module.exports = {
     Symbol
 
 6. In JavaScript it is possible to use `==` ("double equals") or `===` ("triple equals") to compare two values. What is the difference and why do we prefer triple equals?
-    == will compare two variable regardless of their data type. Whereas for === the data types must be consistent. 
+    == will compare two variable regardless of their data type. Whereas for === the data types must be consistent. ( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators )
 
 */
